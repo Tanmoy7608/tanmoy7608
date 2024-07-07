@@ -1,0 +1,41 @@
+import random
+print("Welcome to Rock Paper Scissors!")
+print("Choose: 0 for Rock, 1 for Paper, 2 for Scissors")
+items=[0,1,2]
+user=int(input("Enter your choice: "))
+com=random.choice(items)
+if com==0:
+  com_mod="Rock"
+elif com==1:
+  com_mod="Paper"
+else:
+  com_mod="Scissors"
+if user==0:
+  user_mod="Rock"
+elif user==1:
+  user_mod="Paper"
+else:
+  user_mod="Scissors"
+print(f"You choose: {user_mod}")
+print(f"Computer choose: {com_mod}")
+if com==0 and user==1:
+  print("You win!")
+elif com==0 and user==2:
+  print("You loose!")
+elif com==0 and user==0:
+  print("Draw!")
+elif com==1 and user==0:
+  print("You loose!")
+elif com==1 and user==1:
+  print("Draw!")
+elif com==1 and user==2:
+  print("You win!")
+elif com==2 and user==0:
+  print("You win!")
+elif com==2 and user==1:
+  print("You loose!")
+elif com==2 and user==2:
+  print("Draw!")
+else:
+  print("Invalid input!")
+print("Try Again....")
