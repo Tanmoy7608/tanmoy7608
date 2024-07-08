@@ -1,0 +1,13 @@
+heights = [int(x) for x in input().split()]
+
+total_height=0
+for x in heights:
+  total_height+=x
+print(f"Total height = {total_height}")
+
+number_of_students=0
+for x in heights:
+  number_of_students+=1 
+print(f"Number of students = {number_of_students}")
+average_height=round(total_height/number_of_students)
+print(f"Average height = {average_height}")
