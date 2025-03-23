@@ -1,0 +1,59 @@
+print("\" WELCOME TO PIZZA HUB \"")
+
+Sp=15
+Mp=20
+Lp=25
+
+res=input("Choose:\nS for small size Pizza\nM for medium size Pizza\nL for large size pizza\n--> ")
+
+if res.upper()=="S":
+    print("You have selected Small Sized Pizza")
+    ex=input("Do You Want to Add Pepperoni in your Pizza. Yes or No? ")
+    if ex.lower()=="yes":
+        Sp+=2
+        print("OK Done !") 
+    elif ex.lower()=="no":
+        print("No problem...")
+    cheese=input("Do You Want to Add Extra Cheese in your Ordered Pizza. Yes or No? ")
+    if cheese.lower()=="yes":
+        Sp+=1
+        print("Extra Cheese is also included")
+    elif cheese.lower()=="no":
+        print("OK Then")
+    print(f"YOUR ORDER IS READY.\nTHE TOTAL COST OF THE PIZZA IS {Sp}")
+
+elif res.upper()=="M":
+    ex2=input("Do You Want to Add Pepperoni in your Pizza. Yes or No? ")
+    if ex2.lower()=="yes":
+        Mp+=3
+        print("OK Done !") 
+    elif ex2.lower()=="no":
+        print("No problem...")
+    cheese=input("Do You Want to Add Extra Cheese in your Ordered Pizza. Yes or No? ")
+    if cheese.lower()=="yes":
+        Mp+=1
+        Lp+=1
+        print("Extra Cheese is also included")
+    elif cheese.lower()=="no":
+        print("OK Then")
+    print(f"YOUR ORDER IS READY.\nTHE TOTAL COST OF THE PIZZA IS {Mp}")
+
+elif res.upper()=="L":
+    ex3=input("Do You Want to Add Pepperoni in your Pizza. Yes or No? ")
+    if ex3.lower()=="yes":
+        Lp+=3
+        print("OK Done !") 
+    elif ex3.lower()=="no":
+        print("No problem...")
+
+    cheese=input("Do You Want to Add Extra Cheese in your Ordered Pizza. Yes or No? ")
+    if cheese.lower()=="yes":
+        Mp+=1
+        Lp+=1
+        print("Extra Cheese is also included")
+    elif cheese.lower()=="no":
+        print("OK Then")
+    print(f"YOUR ORDER IS READY.\nTHE TOTAL COST OF THE PIZZA IS {Lp}")
+
+else:
+    print("Please Choose between the given 3 alphabets")
