@@ -4,7 +4,7 @@ Sp=15
 Mp=20
 Lp=25
 
-res=input("Choose:\nS for small size Pizza\nM for medium size Pizza\nL for large size pizza\n--> ")
+res=input("Choose:\nS for small size Pizza (15$)\nM for medium size Pizza (20$)\nL for large size pizza (25$)\n--> ")
 
 if res.upper()=="S":
     print("You have selected Small Sized Pizza")
@@ -20,7 +20,8 @@ if res.upper()=="S":
         print("Extra Cheese is also included")
     elif cheese.lower()=="no":
         print("OK Then")
-    print(f"YOUR ORDER IS READY.\nTHE TOTAL COST OF THE PIZZA IS {Sp}")
+        print("")
+    print(f"YOUR ORDER IS READY.\nTHE TOTAL COST OF THE PIZZA IS {Sp}$\n")
 
 elif res.upper()=="M":
     ex2=input("Do You Want to Add Pepperoni in your Pizza. Yes or No? ")
@@ -36,7 +37,8 @@ elif res.upper()=="M":
         print("Extra Cheese is also included")
     elif cheese.lower()=="no":
         print("OK Then")
-    print(f"YOUR ORDER IS READY.\nTHE TOTAL COST OF THE PIZZA IS {Mp}")
+        print("")
+    print(f"YOUR ORDER IS READY.\nTHE TOTAL COST OF THE PIZZA IS {Mp}$\n")
 
 elif res.upper()=="L":
     ex3=input("Do You Want to Add Pepperoni in your Pizza. Yes or No? ")
@@ -53,7 +55,8 @@ elif res.upper()=="L":
         print("Extra Cheese is also included")
     elif cheese.lower()=="no":
         print("OK Then")
-    print(f"YOUR ORDER IS READY.\nTHE TOTAL COST OF THE PIZZA IS {Lp}")
+        print("")
+    print(f"YOUR ORDER IS READY.\nTHE TOTAL COST OF THE PIZZA IS {Lp}$\n")
 
 else:
     print("Please Choose between the given 3 alphabets")
