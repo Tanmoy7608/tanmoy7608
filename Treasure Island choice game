@@ -1,0 +1,52 @@
+print('''*******************************************************************************
+          |                   |                  |                     |
+ _________|________________.=""_;=.______________|_____________________|_______
+|                   |  ,-"_,=""     `"=.|                  |
+|___________________|__"=._o`"-._        `"=.______________|___________________
+          |                `"=._o`"=._      _`"=._                     |
+ _________|_____________________:=._o "=._."_.-="'"=.__________________|_______
+|                   |    __.--" , ; `"=._o." ,-"""-._ ".   |
+|___________________|_._"  ,. .` ` `` ,  `"-._"-._   ". '__|___________________
+          |           |o`"=._` , "` `; .". ,  "-._"-._; ;              |
+ _________|___________| ;`-.o`"=._; ." ` '`."\` . "-._ /_______________|_______
+|                   | |o;    `"-.o`"=._``  '` " ,__.--o;   |
+|___________________|_| ;     (#) `-.o `"=.`_.--"_o.-; ;___|___________________
+____/______/______/___|o;._    "      `".o|o_.--"    ;o;____/______/______/____
+/______/______/______/_"=._o--._        ; | ;        ; ;/______/______/______/_
+____/______/______/______/__"=._o--._   ;o|o;     _._;o;____/______/______/____
+/______/______/______/______/____"=._o._; | ;_.--"o.--"_/______/______/______/_
+____/______/______/______/______/_____"=.o|o_.--""___/______/______/______/____
+/______/______/______/______/______/______/______/______/______/______/______/_
+*******************************************************************************
+''')
+
+
+print("\"WELCOME TO TREASURE ISLAND.\"")
+print("Your mission is to find the treasure😊")
+
+a=input("You are in a Cross road.\nChoose Left or Right ?\n")
+if a.lower()=="left":
+    b=input("You have now reached a Lake.\nDo you want to Swim or Wait ?\n")
+    if b.lower()=="wait":
+        print("You have reached a Island now.")
+        print("There is a house with 3 doors with 3 different colours.")
+        print("Door 1 --> Pink")
+        print("Door 2 --> Blue")
+        print("Door 3 --> Red")
+        c=input("Choose the door number you want to visit . 1/2/3 ?\n")
+        if c=="1":
+            print("HURRAY.\nYOU WON ...!🎉")
+        elif c=="2":
+            print("You are burnt by fire.\nGAME OVER.🤝🏼")
+        elif c=="3":
+            print("You are eaten by monsters\nGAME OVER.🤝🏼")
+        else:
+            print("Invalid input. Kindly put correct response")
+    elif b.lower()=="swim":
+        print("You have been eaten by a Shark\nGAME OVER.🤝🏼")
+    else:
+        print("Invalid input. Kindly put correct response")
+elif a.lower()=="right":
+    print("You have fallen into a dug hole\nGAME OVER.🤝🏼")
+else:
+    print("Invalid input. Kindly put correct response")
