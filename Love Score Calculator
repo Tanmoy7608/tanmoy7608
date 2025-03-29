@@ -1,0 +1,25 @@
+print("WELCOME TO LOVE COMPARISON GAME")
+
+user=input("Enter Your Name: ").lower()
+user2=input("Enter Your Partner's Name: ").lower()
+user_com=user+user2
+
+a=user_com.count("t")
+b=user_com.count("r")
+c=user_com.count("u")
+d=user_com.count("e")
+
+true_total= a+b+c+d
+
+e=user_com.count("l")
+f=user_com.count("o")
+g=user_com.count("v")
+h=user_com.count("e")
+
+love_total= e+f+g+h
+
+final=str(true_total)+str(love_total)
+
+print(f"Your love score is {final}")
+print("")
+print("This is just a game\nNOT TO BE TAKEN SERIOUSLY..")
